@@ -9,8 +9,11 @@ import {DialogService} from "./dialog.service";
  * @template T - dialog data;
  * @template T1 - dialog result
  */
- @Injectable()
-export class DialogComponent<T, T1> implements OnDestroy {
+ @Component({
+  template: '',
+ })
+export abstract class DialogComponent<T, T1> implements OnDestroy {
+
 
   /**
    * Observer to return result from dialog
