@@ -32,7 +32,7 @@ export function dialogServiceFactory(resolver: ComponentFactoryResolver, applica
     ]
 })
 export class BootstrapModalModule {
-    static forRoot(config: DialogServiceConfig): ModuleWithProviders<any> {
+    static forRoot(config: DialogServiceConfig): ModuleWithProviders {
         return {
             ngModule: BootstrapModalModule,
             providers: [
