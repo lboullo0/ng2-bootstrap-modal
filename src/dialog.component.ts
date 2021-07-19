@@ -1,4 +1,4 @@
-import { OnDestroy
+import { Component, Injectable, OnDestroy
 } from '@angular/core';
 import {Observable, Observer} from 'rxjs';
 import {DialogWrapperComponent} from "./dialog-wrapper.component";
@@ -9,6 +9,7 @@ import {DialogService} from "./dialog.service";
  * @template T - dialog data;
  * @template T1 - dialog result
  */
+ @Injectable()
 export class DialogComponent<T, T1> implements OnDestroy {
 
   /**
